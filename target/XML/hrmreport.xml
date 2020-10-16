@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="152.52">
+    <testcase classname="Alchemy HRM." name="Creating a job vacancy for DevOPS Engineer" time="11.643">
+        <system-out>
+            <![CDATA[Given user login to the OrangeHRM Page......................................passed
+When user Navigate to vacancies menu from Recruitment page..................passed
+Then user adds a Job Vacancy................................................passed
+And user verifies the added vacancy and close browser.......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Alchemy HRM." name="adding a candidate for recruitment" time="21.198">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#menu_recruitment_viewRecruitmentModule&quot;}&#10;  (Session info: chrome=86.0.4240.75)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-83K4TV4', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\NILADR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 2d075f45473fc78f748d2bf4c0f5e86d&#10;*** Element info: {Using=id, value=menu_recruitment_viewRecruitmentModule}" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user login to the OrangeHRM Page1.....................................passed
+When user Navigate to Recruitment page......................................passed
+Then user adds a candidate..................................................passed
+And user verifies added candidate and close browser.........................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#menu_recruitment_viewRecruitmentModule"}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-83K4TV4', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\NILADR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2d075f45473fc78f748d2bf4c0f5e86d
+*** Element info: {Using=id, value=menu_recruitment_viewRecruitmentModule}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepDefinitions.hrm.user_verifies_added_candidate(hrm.java:142)
+	at ✽.user verifies added candidate and close browser(file:///C:/Users/NiladriDutta/Downloads/SDET_CucumberProject%20(1)/SDET_CucumberProject/src/test/java/features/hrm.feature:14)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Alchemy HRM." name="Add multiple employees" time="36.9">
+        <system-out>
+            <![CDATA[Given user login to the OrangeHRM Page2.....................................passed
+When user navigates to PIM page.............................................passed
+Then user adds a employee with details "UserF09", "UserL09".................passed
+And user enters further details "User09", "Enabled".........................passed
+Then user verifies the created employee "UserF09", "UserL09" and close browser.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Alchemy HRM." name="Add multiple employees 2" time="36.947">
+        <system-out>
+            <![CDATA[Given user login to the OrangeHRM Page2.....................................passed
+When user navigates to PIM page.............................................passed
+Then user adds a employee with details "UserF29", "UserL29".................passed
+And user enters further details "User29", "Enabled".........................passed
+Then user verifies the created employee "UserF29", "UserL29" and close browser.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Alchemy HRM." name="Creating multiple vacancies" time="21.931">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id='addJobVacancy_jobTitle']&quot;}&#10;  (Session info: chrome=86.0.4240.75)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-83K4TV4', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\NILADR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49319}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: a9f1909df2a8e05fc7ae9c211b035e32&#10;*** Element info: {Using=xpath, value=//select[@id='addJobVacancy_jobTitle']}" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user login to the OrangeHRM Page3.....................................passed
+When user Navigate to vacancies menu from Recruitment page2.................passed
+Then user adds a candidate with details "newJobVacancyName27", "FirstName1 LastName1", "Automation Test Engineer".failed
+And user verifies added candidate with details "newJobVacancyName27", "FirstName1 LastName1", "Automation Test Engineer" and close browser.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='addJobVacancy_jobTitle']"}
+  (Session info: chrome=86.0.4240.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-83K4TV4', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\NILADR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49319}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a9f1909df2a8e05fc7ae9c211b035e32
+*** Element info: {Using=xpath, value=//select[@id='addJobVacancy_jobTitle']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepDefinitions.hrm.user_adds_a_candidate_with_details(hrm.java:267)
+	at ✽.user adds a candidate with details "newJobVacancyName27", "FirstName1 LastName1", "Automation Test Engineer"(file:///C:/Users/NiladriDutta/Downloads/SDET_CucumberProject%20(1)/SDET_CucumberProject/src/test/java/features/hrm.feature:31)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Alchemy HRM." name="Creating multiple vacancies 2" time="23.307">
+        <system-out>
+            <![CDATA[Given user login to the OrangeHRM Page3.....................................passed
+When user Navigate to vacancies menu from Recruitment page2.................passed
+Then user adds a candidate with details "newJobVacancyName29", "FirstName1 LastName1", "Automation Test Engineer".passed
+And user verifies added candidate with details "newJobVacancyName29", "FirstName1 LastName1", "Automation Test Engineer" and close browser.passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

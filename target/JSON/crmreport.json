@@ -1,0 +1,330 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-11T05:11:46.583Z",
+        "line": 4,
+        "name": "Counting Dashlets",
+        "description": "",
+        "id": "alchemy-crm.;counting-dashlets",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10455987100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the Alchemy CRM website",
+            "match": {
+              "location": "stepDefinitions.crm.user_is_on_the_Alchemy_CRM_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1392494900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user count the dashlets",
+            "match": {
+              "location": "stepDefinitions.crm.user_count_the_dashlets()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 673199200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user prints all dashlet titles and close browser",
+            "match": {
+              "location": "stepDefinitions.crm.user_prints_all_dashlet_titles()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@suiteCRM"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-11T05:11:59.289Z",
+        "line": 9,
+        "name": "Create leads using parameterization",
+        "description": "",
+        "id": "alchemy-crm.;create-leads-using-parameterization",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9696241600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on the Alchemy CRM website1",
+            "match": {
+              "location": "stepDefinitions.crm.user_is_on_the_Alchemy_CRM_website1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.JavascriptException: javascript error: Failed to execute \u0027elementsFromPoint\u0027 on \u0027Document\u0027: The provided double value is non-finite.\n  (Session info: chrome\u003d86.0.4240.75)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-83K4TV4\u0027, ip: \u0027192.168.1.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\NILADR~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:53990}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: b28059d1e98cab81085df677c1ea0b2e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\r\n\tat stepDefinitions.crm.user_navigate_to_the_lead(crm.java:108)\r\n\tat ✽.user navigate to the lead(file:///C:/Users/NiladriDutta/Downloads/SDET_CucumberProject%20(1)/SDET_CucumberProject/src/test/java/features/crm.feature:11)\r\n",
+              "duration": 130650200,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "user navigate to the lead",
+            "match": {
+              "location": "stepDefinitions.crm.user_navigate_to_the_lead()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997900,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user creates new lead with the following details \"Mr.\", \"FirstName01\", \"LastName01\", \"0001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mr.",
+                  "offset": 50
+                },
+                {
+                  "val": "FirstName01",
+                  "offset": 57
+                },
+                {
+                  "val": "LastName01",
+                  "offset": 72
+                },
+                {
+                  "val": "0001",
+                  "offset": 86
+                }
+              ],
+              "location": "stepDefinitions.crm.user_creates_new_lead(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user navigates to view leads and close browser",
+            "match": {
+              "location": "stepDefinitions.crm.user_navigates_to_view_leads()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@suiteCRM"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-11T05:12:09.173Z",
+        "line": 15,
+        "name": "Schedule a meeting and invite members",
+        "description": "",
+        "id": "alchemy-crm.;schedule-a-meeting-and-invite-members",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9672515900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is on the Alchemy CRM website2",
+            "match": {
+              "location": "stepDefinitions.crm.user_is_on_the_Alchemy_CRM_website2()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.JavascriptException: javascript error: Failed to execute \u0027elementsFromPoint\u0027 on \u0027Document\u0027: The provided double value is non-finite.\n  (Session info: chrome\u003d86.0.4240.75)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-83K4TV4\u0027, ip: \u0027192.168.1.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\NILADR~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:54010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 4d3622941ae48d3fe1f29c4bb6722b95\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\r\n\tat stepDefinitions.crm.user_navigates_to_schedule_meeting(crm.java:169)\r\n\tat ✽.user navigates to schedule meeting(file:///C:/Users/NiladriDutta/Downloads/SDET_CucumberProject%20(1)/SDET_CucumberProject/src/test/java/features/crm.feature:17)\r\n",
+              "duration": 49866700,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "user navigates to schedule meeting",
+            "match": {
+              "location": "stepDefinitions.crm.user_navigates_to_schedule_meeting()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user enter details for meeting \"Subject001\", \"10/10/2020\", \"11/10/2020\", \"xyz\", \"cucumber\", \"nit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Subject001",
+                  "offset": 32
+                },
+                {
+                  "val": "10/10/2020",
+                  "offset": 46
+                },
+                {
+                  "val": "11/10/2020",
+                  "offset": 60
+                },
+                {
+                  "val": "xyz",
+                  "offset": 74
+                },
+                {
+                  "val": "cucumber",
+                  "offset": 81
+                },
+                {
+                  "val": "nit",
+                  "offset": 93
+                }
+              ],
+              "location": "stepDefinitions.crm.enter_new_meeting_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user verifies the created meeting with \"Subject001\" and close browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Subject001",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.crm.user_verifies_the_created_meeting(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@suiteCRM"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-11T05:12:18.923Z",
+        "line": 29,
+        "name": "Create a Product",
+        "description": "",
+        "id": "alchemy-crm.;create-a-product;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9709223300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user is on the Alchemy CRM website3",
+            "match": {
+              "location": "stepDefinitions.crm.user_is_on_the_Alchemy_CRM_website3()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.JavascriptException: javascript error: Failed to execute \u0027elementsFromPoint\u0027 on \u0027Document\u0027: The provided double value is non-finite.\n  (Session info: chrome\u003d86.0.4240.75)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-83K4TV4\u0027, ip: \u0027192.168.1.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\NILADR~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:54033}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: fa6d137ad011d3490aceafcb7c3fbfda\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat stepDefinitions.crm.user_navigates_to_products(crm.java:258)\r\n\tat ✽.user navigates to products(file:///C:/Users/NiladriDutta/Downloads/SDET_CucumberProject%20(1)/SDET_CucumberProject/src/test/java/features/crm.feature:23)\r\n",
+              "duration": 84771500,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "user navigates to products",
+            "match": {
+              "location": "stepDefinitions.crm.user_navigates_to_products()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "user enter details for new product \"NewProduct01\" and \"100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NewProduct01",
+                  "offset": 36
+                },
+                {
+                  "val": "100",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinitions.crm.user_enter_details_for_new_product_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user verifies created record \"NewProduct01\" and close browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NewProduct01",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.crm.user_verifies_created_record(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@suiteCRM"
+          }
+        ]
+      }
+    ],
+    "name": "Alchemy CRM.",
+    "description": "",
+    "id": "alchemy-crm.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/crm.feature",
+    "tags": [
+      {
+        "name": "@suiteCRM",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
